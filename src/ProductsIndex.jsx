@@ -7,6 +7,8 @@ export function ProductsIndex(props) {
         <div key={product.id}>
           <h2>{product.name}</h2>
           <img src={product.images[0].url} />
+          <br />
+          <button type="button">More Info</button>
         </div>
       ))}
     </div>
