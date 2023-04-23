@@ -13,11 +13,18 @@ export function Content() {
     });
   };
 
+  const handleProductsNew = (params) => {
+    axios.post(`http://localhost:3000/products.json`, params).then((response) => {
+      console.log(response);
+      setProducts([...products, response.data]);
+    });
+  };
+
   useEffect(handleProductsIndex, []);
 
   return (
     <div>
-      <ProductsNew />
+      <ProductsNew onCreateProduct={handleProductsNew} />
       <ProductsIndex products={products} />
     </div>
   );
