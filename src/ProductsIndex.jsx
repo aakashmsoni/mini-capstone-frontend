@@ -8,7 +8,9 @@ export function ProductsIndex(props) {
           <h2>{product.name}</h2>
           <img src={product.images[0].url} />
           <br />
-          <button type="button">More Info</button>
+          <button type="button" onClick={() => props.onShowProduct(product)}>
+            More Info
+          </button>
         </div>
       ))}
     </div>
