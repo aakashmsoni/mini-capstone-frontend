@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-
+import { Routes, Route } from "react-router-dom";
 import { ProductsIndex } from "./ProductsIndex";
 import { ProductsNew } from "./ProductsNew";
 import { Modal } from "./Modal";
@@ -39,6 +39,9 @@ export function Content() {
 
   return (
     <div className="container">
+      <Routes>
+        <Route path="/products/new" element={<ProductsNew onCreateProduct={handleProductsNew} />} />
+      </Routes>
       <Login />
       <ProductsNew onCreateProduct={handleProductsNew} />
       <ProductsIndex products={products} onShowProduct={handleShowProduct} />

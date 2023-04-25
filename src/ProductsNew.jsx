@@ -13,7 +13,7 @@ export function ProductsNew(props) {
       <form onSubmit={handleSubmit}>
         <div>
           <label>
-            Name: <input type="text" name="name" />
+            Name: <input type="text" id="name" name="name" />
           </label>
         </div>
         <div>
