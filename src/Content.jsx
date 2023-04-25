@@ -37,7 +37,7 @@ export function Content() {
   useEffect(handleProductsIndex, []);
 
   return (
-    <div>
+    <div className="container">
       <ProductsNew onCreateProduct={handleProductsNew} />
       <ProductsIndex products={products} onShowProduct={handleShowProduct} />
       <Modal show={isProductShowVisible} onClose={handleClose}>

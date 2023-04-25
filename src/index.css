@@ -5,3 +5,7 @@ html {
 #products-index img {
   width:300px;
 }
+
+#products-show img {
+  width:300px
+}
