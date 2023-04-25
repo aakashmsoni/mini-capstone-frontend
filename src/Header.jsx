@@ -29,12 +29,14 @@ export function Header() {
                   New Product
                 </a>
               </li>
-              {/* <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li> */}
+              <li class="nav-item">
+                <a class="nav-link" href="#login">
+                  Login
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
             </ul>
           </div>
         </div>
