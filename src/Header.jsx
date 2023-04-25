@@ -1,3 +1,6 @@
+import { LogoutLink } from "./LogoutLink";
+import { Link } from "react-router-dom";
+
 export function Header() {
   return (
     <header>
@@ -35,7 +38,9 @@ export function Header() {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <div class="nav-link">
+                  <LogoutLink />
+                </div>
               </li>
             </ul>
           </div>
